@@ -22,6 +22,7 @@ public class BoardDAO {
 
     public int deleteBoard(int seq) {
         String sql = "delete from member where seq = " + seq;
+        System.out.println(sql);
         return jdbcTemplate.update(sql);
     }
 
